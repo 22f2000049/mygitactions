@@ -1,0 +1,16 @@
+name: Email Identity Test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 22f2000049@ds.study.iitm.ac.in
+        run: echo "Hello, this step is tagged with my email!"
